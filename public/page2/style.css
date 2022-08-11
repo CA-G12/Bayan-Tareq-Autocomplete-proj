@@ -14,6 +14,48 @@ body{
     margin: auto;
     height: 100vh;
 }
+.po-up-continer{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    /* visibility: hidden; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(219 219 219 / 93%);
+    position: fixed;
+}
+.po-up{
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+position: relative;
+background-color: #2d4d42;
+width: 40%;
+border-radius: 40px;
+margin: 4rem;
+padding: 2rem;
+}
+.po-up ion-icon{
+    position: absolute;
+    right: 14%;
+    top: 5%;
+font-size: 2rem;
+font-weight: bold;
+cursor: pointer;
+}
+.po-up h3{
+    font-size: 30px;
+    padding: 2rem;
+    font-family: "Mochiy Pop One";
+}
+.po-up p{
+    line-height: 35px;
+    font-size: larger;
+    padding: 0 2rem;
+}
 main{
     width: 60%;
     background-color: #c4d0cc;
@@ -60,7 +102,7 @@ main div h2{
     width: 35%;
     background: #718878;
     color: white;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     padding: 0.5rem 0;
     font-weight: 600;
     text-align: center;
