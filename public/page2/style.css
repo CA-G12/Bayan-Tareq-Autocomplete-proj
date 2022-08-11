@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Cabin&family=Dosis&family=Merriweather:ital@1&family=Montserrat:wght@300&family=Nunito:wght@700&family=PT+Sans&family=Roboto+Slab&family=Roboto:ital,wght@0,300;0,400;1,400&family=Work+Sans:ital,wght@0,300;0,500;1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cabin&family=Dosis&family=Merriweather:ital@1&family=Mochiy+Pop+One&family=Montserrat:wght@300&family=Nunito:wght@700&family=PT+Sans&family=Roboto+Slab&family=Roboto:ital,wght@0,300;0,400;1,400&family=Work+Sans:ital,wght@0,300;0,500;1,300&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: "Noto Serif";
+    background: #718878;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    height: 100vh;
+}
+main{
+    width: 60%;
+    background-color: #c4d0cc;
+    border-radius: 1rem;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* padding: 3rem ,0; */
+    margin: 3rem;
+}
+header h1{
+    font-family: "Mochiy Pop One";
+    font-size: 3rem;
+    padding: 0.5rem;
+    color: #2d4d42;
+}
+main img{
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    transition: all 0.3s linear;
+}
+main img:hover{
+    box-shadow: 2px 8px 45px #2d4d42;
+    transform: translate3D(0, -9px, 0);
+}
+
+main div h2{
+    text-align: center;
+    color: #2d4d42;
+    font-size: 2.5rem;
+    font-weight: 800;
+    padding: 0.4rem 0;
+}
+.info{
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem 0
+}
+.info span{
+    width: 35%;
+    background: #718878;
+    color: white;
+    font-size: 1.5rem;
+    padding: 0.5rem 0;
+    font-weight: 600;
+    text-align: center;
+    border-radius: 2rem;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+main button{
+    background-color: #2d4d42;
+    width: 10rem;
+    height: 4rem;
+    border-radius: 2rem;
+    color: aliceblue;
+    text-align: center;
+    font-size: small;
+    cursor: pointer;
+    font-family: "Mochiy Pop One";
+    margin-bottom: 0.5rem;
+    transition: all 0.3s linear;
+}
+main button:hover{
+    box-shadow: 2px 8px 45px #2d4d42;
+    transform: translate3D(0, -9px, 0);
+}
