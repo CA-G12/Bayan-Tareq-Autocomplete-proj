@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Cabin&family=Dosis&family=Merriweather:ital@1&family=Montserrat:wght@300&family=Nunito:wght@700&family=PT+Sans&family=Roboto+Slab&family=Roboto:ital,wght@0,300;0,400;1,400&family=Work+Sans:ital,wght@0,300;0,500;1,300&display=swap%27');
+
+@import url('https://fonts.googleapis.com/css2?family=Cabin&family=Dosis&family=Merriweather:ital@1&family=Mochiy+Pop+One&family=Montserrat:wght@300&family=Nunito:wght@700&family=PT+Sans&family=Roboto+Slab&family=Roboto:ital,wght@0,300;0,400;1,400&family=Work+Sans:ital,wght@0,300;0,500;1,300&display=swap%27');
+
+
+body {
+    background:linear-gradient(0deg, rgba(255, 255, 255, 0.3), rgba(45, 77, 66, 0.3)),
+    url('../img/bg_home_page.jpg');
+    font-family: "Noto Serif";
+    
+}
+/* ------------------------------ Start About Header ------------------------------  */
+nav .logo {
+    width: 200px;
+    height: 170px;
+    padding: 0px -49px;
+    margin: -8px -14px;
+}
+header h1 {
+    text-align: center;
+    font-family: "Mochiy Pop One";
+    color: #2D4D42;
+
+}
+
+    /* ------------------------------ End About Header ------------------------------  */
+    /* ------------------------------ Start About Main ------------------------------  */
+main {
+    text-align: center;
+    padding-top: 50px;
+}
+main input {
+    padding: 10px 16px;
+    border: none;
+    width: 300px;
+    border-radius: 12px;
+    outline: none;
+}
+main a {
+    text-decoration: none;
+    color: #2D4D42;
+    font-size: 13px;
+    padding: 6px 14px;
+    background: #fff;
+    border-radius: 10px;
+    margin-left: 20px;
+    font-family: "Mochiy Pop One";
+}
+    /* ------------------------------ End About Main ------------------------------  */
