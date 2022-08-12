@@ -17,7 +17,8 @@
   },
   "homepage": "https://github.com/CA-G12/Bayan-Tareq-Autocomplete-proj#readme",
   "dependencies": {
-    "jest": "^28.1.3"
+    "jest": "^28.1.3",
+    "mime-types": "^2.1.35"
   },
   "devDependencies": {
     "eslint": "^8.21.0",
