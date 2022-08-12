@@ -71,3 +71,10 @@ searchBtn.addEventListener("click",(e)=>{
     searchInput.value=""
     
 })
+
+searchInput.addEventListener('input',(e)=>{
+    console.log(searchInput.value);
+    featch(`/post/${searchInput.value}`,(data)=>{
+        console.log(data);
+    })
+})
