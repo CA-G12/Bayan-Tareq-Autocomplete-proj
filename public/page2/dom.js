@@ -64,6 +64,9 @@ const createCard =(data)=>{
 
 searchBtn.addEventListener("click",(e)=>{
     e.preventDefault()
+    if(searchInput.value == ""){
+        return
+    }
     featch(`https://www.theaudiodb.com/api/v1/json/2/search.php?s=${searchInput.value}`, createCard)
     searchInput.value=""
     
