@@ -6,7 +6,7 @@ This is a music app , that you can search on artist and see the details of artis
 
 ## Live Page :
 
-- [GO LIVE](https://ca-g12.github.io/Bayan-Tareq-Autocomplete-proj/)
+- [GO LIVE](https://tareq-bayan-project-heroku.herokuapp.com/)
 
 ---
 
