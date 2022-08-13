@@ -11,10 +11,11 @@ const artistHandler = (res, endpoint) => {
     } 
     else {
       const value = endpoint.slice(endpoint.lastIndexOf('/') + 1);
+      const allValue= value.split("%20").join(" ")
       let count = 0;
       const parsedData = JSON.parse(data);
       const filteredData =parsedData.songs.filter((ele) => {
-        if (ele.artist.toUpperCase().includes(value.toUpperCase()) && count < 5) {
+        if (ele.artist.toUpperCase().includes(allValue.toUpperCase()) && count < 5) {
           // eslint-disable-next-line no-plusplus
           count++;
           return ele;
