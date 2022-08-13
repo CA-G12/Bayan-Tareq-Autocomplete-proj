@@ -2,24 +2,29 @@ const searchBtn =document.querySelector('.search-button')
 const searchInput = document.querySelector('.search-text')
 const body = document.querySelector('.body')
 const optionsList = document.getElementsByTagName('option')
+const popUpContiner= document.querySelector('.po-up-continer')
+const closeBtn = document.querySelector('.close')
+const para = document.querySelector('.para')
 
 
-const featch =(url ,cb)=>{
-  const xhr = new XMLHttpRequest();
-  xhr.onreadystatechange = () => {
-    if (xhr.readyState === 4) {
-      if (xhr.status === 200) {
-        const data = JSON.parse(xhr.responseText)
-        cb(data)
-      } else {
-        console.log('Error', JSON.parse(xhr.responseText))
-      }
-    }
-  };
-
-  xhr.open('GET', url);
-  xhr.send();
+closeBtn.addEventListener('click', ()=>{
+    popUpContiner.style.visibility='hidden';
+})
+popUpContiner.addEventListener('click',()=>{
+    popUpContiner.style.visibility='hidden'
+})
+const createpopUp =(data)=>{
+    popUpContiner.style.visibility='visible';
+    const AlbumUrl ='https://theaudiodb.com/api/v1/json/2/discography.php'
+    featch(`${AlbumUrl}?s=${data.artists[0].strArtist}`,(data)=>{
+      const albumsText= data.album.map(ele => ele.strAlbum).join(', ')
+      para.textContent= albumsText;
+    })
+    
 }
+
+
+
 const createCard =(data)=>{
 /// condition to delete the old main if exist
   if(body.childNodes.length ==18){
@@ -52,7 +57,9 @@ const createCard =(data)=>{
   const btn = document.createElement('button');
   btn.textContent='Albums';
   btn.classList.add('album-btn');
-    
+  btn.addEventListener('click',(e)=>{
+    createpopUp(data)
+  })
 
   main.appendChild(img);
   main.appendChild(div);
